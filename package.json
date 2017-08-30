@@ -1,0 +1,32 @@
+{
+  "name": "nrvcontainerday-api",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "build": "webpack",
+    "build-watch": "webpack -w",
+    "serve": "nodemon --watch ./dist ./dist/app.js",
+    "dev": "concurrently \"npm run build-watch\" \"npm run serve\""
+  },
+  "dependencies": {
+    "body-parser": "~1.17.1",
+    "cors": "^2.8.4",
+    "debug": "~2.6.3",
+    "express": "~4.15.2",
+    "express-basic-auth": "^1.1.2",
+    "express-joi-validator": "^2.0.0",
+    "joi": "^10.6.0",
+    "lowdb": "^0.17.2",
+    "morgan": "~1.8.1",
+    "serve-favicon": "~2.4.2"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "concurrently": "^3.5.0",
+    "nodemon": "^1.11.0",
+    "webpack": "^3.5.5"
+  }
+}
