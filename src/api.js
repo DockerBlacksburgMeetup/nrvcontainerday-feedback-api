@@ -19,6 +19,7 @@ const feedbackSchema = {
     presenterPresenting: Joi.number().integer().min(0).max(5).required(),
     materialEasyToUnderstand: Joi.number().integer().min(0).max(5).required(),
     moreExcited: Joi.number().integer().min(0).max(5).required(),
+    howToBeBetter: Joi.string().optional(),
     comments: Joi.string().optional(),
   },
 };
